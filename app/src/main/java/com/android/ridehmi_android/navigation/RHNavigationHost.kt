@@ -3,6 +3,8 @@ package com.android.ridehmi_android.navigation
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import com.android.ridehmi_android.presentation.screens.riderHMIScreen.RHRideHMIDashboardScreen
 
 /**
  * Navigation host for the application.
@@ -10,7 +12,6 @@ import androidx.navigation.compose.NavHost
  * @param navController    The navigation controller to manage app navigation.
  * @param startDestination The start destination route.
  *
- * Created by Gowthamchandran R on 07-02-2024.
  */
 @Composable
 fun RHNavigationHost(
@@ -21,6 +22,8 @@ fun RHNavigationHost(
         navController = navController,
         startDestination = startDestination
     ) {
-
+        composable(route = RHNavigationRoutes.RideHMIScreen.route) {
+            RHRideHMIDashboardScreen()
+        }
     }
 }

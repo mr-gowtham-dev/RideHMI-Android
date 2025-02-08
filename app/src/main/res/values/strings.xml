@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">RideHMI-Android</string>
+    <string name="eta_minutes">ETA: %d Min</string>
+    <string name="battery_percentage">%d%%</string>
+    <string name="motor_label">MOTOR </string>
+    <string name="motor_on"> ON</string>
+    <string name="motor_off">OFF</string>
 </resources>
